@@ -8,10 +8,10 @@ const boxes = document.querySelector("#boxes");
 const create = document.querySelector("[data-create]");
 const destroy = document.querySelector("[data-destroy]");
 const count = document.querySelector("#controls>input");
+let wid = 30;
+let hei = 30;
 
 create.addEventListener("click", () => {
-  let wid = 30;
-  let hei = 30;
   for (let i = 0; i < count.valueAsNumber; i++) {
     const div = document.createElement("div");
     div.style.width = wid + "px";
@@ -22,4 +22,8 @@ create.addEventListener("click", () => {
     hei += 10;
   }
 });
-destroy.addEventListener("click", () => (boxes.innerHTML = ""));
+destroy.addEventListener("click", () => {
+  boxes.innerHTML = "";
+  wid = 30;
+  hei = 30;
+});
