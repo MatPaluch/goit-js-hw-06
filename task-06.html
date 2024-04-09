@@ -10,7 +10,9 @@
       #validation-input {
         border: 2px solid #bdbdbd;
       }
-
+      #validation-input:focus {
+        outline: none;
+      }
       #validation-input.valid {
         border-color: #4caf50;
       }
@@ -22,7 +24,7 @@
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
-
+    <h1>Simple validation to change border color, by focus.</h1>
     <input
       type="text"
       id="validation-input"
