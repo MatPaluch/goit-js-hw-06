@@ -1,1 +1,1 @@
-# Practise tasks #
+# Practise tasks with JavaScript #
